@@ -1,0 +1,35 @@
+{
+  "timezone": "Asia/Shanghai",
+  "horizonDays": 14,
+  "bookingClosesBeforeMinutes": 30,
+  "holdTtlMinutes": 30,
+  "accessibleReleaseBeforeHours": 24,
+  "waitlistTtlHours": 72,
+  "halls": [
+    {
+      "id": "digital-gallery",
+      "name": "数字文物展厅",
+      "weeklyClosed": [1],
+      "slotTemplates": [
+        { "id": "morning", "label": "上午场", "start": "09:30", "end": "12:00", "capacity": 60, "accessibleHeld": 6 },
+        { "id": "afternoon", "label": "下午场", "start": "14:00", "end": "16:30", "capacity": 60, "accessibleHeld": 6 }
+      ]
+    }
+  ],
+  "holidayOverrides": {
+    "2026-09-28": { "closed": false, "name": "中秋调休开放" },
+    "2026-10-01": { "closed": true, "name": "国庆节" },
+    "2026-10-02": { "closed": true, "name": "国庆节" },
+    "2026-10-03": { "closed": true, "name": "国庆节" }
+  },
+  "shifts": [
+    { "id": "std-a", "label": "常规导览A组", "modality": "standard", "capacity": 30 },
+    { "id": "std-b", "label": "常规导览B组", "modality": "standard", "capacity": 30 },
+    { "id": "sign-a", "label": "手语导览A组", "modality": "sign", "capacity": 12 },
+    { "id": "sign-b", "label": "手语导览B组", "modality": "sign", "capacity": 12 }
+  ],
+  "resources": [
+    { "id": "wheelchair-main", "label": "轮椅借用·主用", "type": "wheelchair_pool", "capacity": 3 },
+    { "id": "wheelchair-reserve", "label": "轮椅借用·备用", "type": "wheelchair_reserve", "capacity": 1 }
+  ]
+}

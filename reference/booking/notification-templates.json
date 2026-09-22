@@ -1,0 +1,64 @@
+{
+  "application_received": {
+    "channel": "sms",
+    "title": "申请已受理",
+    "body": "{{name}}您好，您申请的{{hall}}{{slotLabel}}（编号{{code}}）已暂留名额，请于{{holdExpiresAt}}前通过原链接确认，逾期自动释放。"
+  },
+  "reservation_confirmed": {
+    "channel": "sms",
+    "title": "预约已确认",
+    "body": "{{name}}您好，编号{{code}}的{{hall}}{{slotLabel}}预约已确认，共{{partySize}}人，请按时到场。"
+  },
+  "reservation_cancelled": {
+    "channel": "sms",
+    "title": "预约已取消",
+    "body": "{{name}}您好，编号{{code}}的{{hall}}{{slotLabel}}预约已取消。"
+  },
+  "reservation_rescheduled": {
+    "channel": "sms",
+    "title": "预约已改期",
+    "body": "{{name}}您好，编号{{code}}的预约已由{{oldSlotLabel}}调整为{{newSlotLabel}}，状态：{{statusText}}。"
+  },
+  "waitlist_added": {
+    "channel": "sms",
+    "title": "已进入候补",
+    "channel_note": "内容不包含任何服务需求细节",
+    "body": "{{name}}您好，{{hall}}{{slotLabel}}当前名额已满，您已进入候补队列（编号{{code}}），有名额时将按规则通知；候补有效期至{{expiresAt}}。"
+  },
+  "waitlist_promoted": {
+    "channel": "sms",
+    "title": "候补晋级",
+    "body": "{{name}}您好，编号{{code}}的候补已晋级，{{hall}}{{slotLabel}}名额已暂留，请于{{holdExpiresAt}}前确认，逾期释放给后续候补。"
+  },
+  "hold_expired": {
+    "channel": "sms",
+    "title": "名额已释放",
+    "body": "{{name}}您好，编号{{code}}因未在{{holdExpiresAt}}前确认，名额已自动释放。"
+  },
+  "waitlist_expired": {
+    "channel": "sms",
+    "title": "候补已过期",
+    "body": "{{name}}您好，编号{{code}}的候补已于{{expiresAt}}过期，可重新提交申请。"
+  },
+  "service_changed": {
+    "channel": "sms",
+    "title": "服务安排变更",
+    "body": "{{name}}您好，编号{{code}}：因{{reason}}，{{oldService}}已调整为{{newService}}，参观时段与名额不变。"
+  },
+  "service_unavailable": {
+    "channel": "sms",
+    "title": "部分服务暂时不可用",
+    "body": "{{name}}您好，编号{{code}}：因{{reason}}，{{oldService}}暂时无法提供，您的参观名额保留。可通过原链接改期或取消，如需帮助请联系现场服务台。"
+  },
+  "service_restored": {
+    "channel": "sms",
+    "title": "服务已恢复",
+    "body": "{{name}}您好，编号{{code}}：此前受影响的服务已恢复，当前安排为{{newService}}，参观时段与名额不变。"
+  },
+  "staff_nudge": {
+    "channel": "sms",
+    "title": "现场服务联系",
+    "channel_note": "由现场工作人员发起，内容不含任何服务需求细节",
+    "body": "{{name}}您好，编号{{code}}：现场服务台希望与您确认{{hall}}{{slotLabel}}的到场安排，如有疑问可联系现场服务台或通过原链接管理您的申请。"
+  }
+}

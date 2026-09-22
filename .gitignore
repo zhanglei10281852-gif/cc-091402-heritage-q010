@@ -9,4 +9,5 @@ build/
 coverage/
 .data/
 .runtime/
+data/
 .DS_Store

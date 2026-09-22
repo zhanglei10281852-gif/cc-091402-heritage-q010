@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "name": "手语班次故障改派其他手语班次",
+      "match": { "kind": "shift", "modality": "sign" },
+      "alternatives": [{ "kind": "shift", "modality": "sign" }]
+    },
+    {
+      "name": "常规班次故障改派其他常规班次",
+      "match": { "kind": "shift", "modality": "standard" },
+      "alternatives": [{ "kind": "shift", "modality": "standard" }]
+    },
+    {
+      "name": "轮椅主用资源故障改派备用资源",
+      "match": { "kind": "pool", "type": "wheelchair_pool" },
+      "alternatives": [{ "kind": "pool", "type": "wheelchair_reserve" }]
+    }
+  ],
+  "fallback": { "action": "offer_change", "template": "service_unavailable" }
+}
